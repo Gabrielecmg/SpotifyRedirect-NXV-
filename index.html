@@ -29,6 +29,9 @@
             // Reindirizza dopo 2 secondi
             setTimeout(function(){
                 window.location.href = "https://open.spotify.com/track/4VEFn6NN9hj4buCOG7Wqxb?si=c4e70d3e3d6f4d69";
+                
+                // Traccia l'evento ViewContent dopo il reindirizzamento
+                fbq('track', 'ViewContent');
             }, 2000);
         };
     </script>
@@ -37,4 +40,4 @@
     <h1>Redirecting...</h1>
 </body>
 </html>
-</html>
+
