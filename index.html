@@ -27,6 +27,9 @@
         // Funzione per il reindirizzamento dopo il caricamento del pixel
         function redirectToURL() {
             window.location.href = "https://open.spotify.com/track/4VEFn6NN9hj4buCOG7Wqxb?si=c4e70d3e3d6f4d69";
+
+            // Traccia l'evento ViewContent dopo il reindirizzamento
+            fbq('track', 'ViewContent');
         }
 
         // Quando il pixel è caricato
